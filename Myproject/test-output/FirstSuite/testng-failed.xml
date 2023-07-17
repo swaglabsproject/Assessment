@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FirstSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="First Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.myproject.testpack.TestClass">
+        <methods>
+          <include name="launchbrowser"/>
+          <include name="ssonfailure"/>
+          <include name="cart"/>
+          <include name="yourinfo"/>
+          <include name="staticprop"/>
+          <include name="prfinalpage"/>
+          <include name="teardown"/>
+          <include name="finalconfirmation"/>
+        </methods>
+      </class> <!-- com.myproject.testpack.TestClass -->
+    </classes>
+  </test> <!-- First Test(failed) -->
+</suite> <!-- Failed suite [FirstSuite] -->
